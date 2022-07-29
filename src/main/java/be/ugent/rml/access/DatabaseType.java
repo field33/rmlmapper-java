@@ -5,9 +5,14 @@ import java.util.List;
 
 /*
     NOTE: The Oracle driver has to be installed manually, because it's not on Maven due to licensing.
+    NOTE: The SQLite3 driver has to be installed manually
  */
 public enum DatabaseType {
 
+    SQLITE3("SQLite3",
+        "sqlite:",
+        "sqlite",
+        "org.sqlite.JDBC"),
     MYSQL("MySQL",
             "mysql:",
             "mysql",
